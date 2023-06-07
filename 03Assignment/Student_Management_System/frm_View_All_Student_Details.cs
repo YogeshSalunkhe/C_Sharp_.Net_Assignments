@@ -16,5 +16,12 @@ namespace Student_Management_System
         {
             InitializeComponent();
         }
+
+        private void frm_View_All_Student_Details_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'student_Information_DBDataSet.Student_Details' table. You can move, or remove it, as needed.
+            this.student_DetailsTableAdapter.Fill(this.student_Information_DBDataSet.Student_Details);
+
+        }
     }
 }

@@ -38,11 +38,11 @@ namespace Student_Management_System
             this.label5 = new System.Windows.Forms.Label();
             this.tb_RollNO = new System.Windows.Forms.TextBox();
             this.tb_MobNO = new System.Windows.Forms.TextBox();
-            this.tb_Name = new System.Windows.Forms.TextBox();
             this.cmb_Course = new System.Windows.Forms.ComboBox();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.dtp_DOB = new System.Windows.Forms.DateTimePicker();
+            this.tb_Name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_Head
@@ -113,11 +113,13 @@ namespace Student_Management_System
             // 
             // tb_RollNO
             // 
+            this.tb_RollNO.Enabled = false;
             this.tb_RollNO.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_RollNO.Location = new System.Drawing.Point(509, 142);
             this.tb_RollNO.Name = "tb_RollNO";
             this.tb_RollNO.Size = new System.Drawing.Size(338, 36);
             this.tb_RollNO.TabIndex = 1;
+            this.tb_RollNO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Number);
             // 
             // tb_MobNO
             // 
@@ -127,14 +129,7 @@ namespace Student_Management_System
             this.tb_MobNO.Name = "tb_MobNO";
             this.tb_MobNO.Size = new System.Drawing.Size(338, 36);
             this.tb_MobNO.TabIndex = 3;
-            // 
-            // tb_Name
-            // 
-            this.tb_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Name.Location = new System.Drawing.Point(509, 222);
-            this.tb_Name.Name = "tb_Name";
-            this.tb_Name.Size = new System.Drawing.Size(338, 36);
-            this.tb_Name.TabIndex = 2;
+            this.tb_MobNO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Number);
             // 
             // cmb_Course
             // 
@@ -161,6 +156,7 @@ namespace Student_Management_System
             this.btn_Save.TabIndex = 6;
             this.btn_Save.Text = "SAVE";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Refresh
             // 
@@ -182,8 +178,17 @@ namespace Student_Management_System
             this.dtp_DOB.MinDate = new System.DateTime(1985, 1, 1, 0, 0, 0, 0);
             this.dtp_DOB.Name = "dtp_DOB";
             this.dtp_DOB.Size = new System.Drawing.Size(338, 36);
-            this.dtp_DOB.TabIndex = 13;
+            this.dtp_DOB.TabIndex = 4;
             this.dtp_DOB.Value = new System.DateTime(2005, 12, 31, 0, 0, 0, 0);
+            // 
+            // tb_Name
+            // 
+            this.tb_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Name.Location = new System.Drawing.Point(509, 220);
+            this.tb_Name.Name = "tb_Name";
+            this.tb_Name.Size = new System.Drawing.Size(338, 36);
+            this.tb_Name.TabIndex = 2;
+            this.tb_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Text);
             // 
             // frm_Add_New_Student
             // 
@@ -191,11 +196,11 @@ namespace Student_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(938, 646);
+            this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.dtp_DOB);
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.cmb_Course);
-            this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.tb_MobNO);
             this.Controls.Add(this.tb_RollNO);
             this.Controls.Add(this.label5);
@@ -226,10 +231,10 @@ namespace Student_Management_System
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_RollNO;
         private System.Windows.Forms.TextBox tb_MobNO;
-        private System.Windows.Forms.TextBox tb_Name;
         private System.Windows.Forms.ComboBox cmb_Course;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.DateTimePicker dtp_DOB;
+        private System.Windows.Forms.TextBox tb_Name;
     }
 }
