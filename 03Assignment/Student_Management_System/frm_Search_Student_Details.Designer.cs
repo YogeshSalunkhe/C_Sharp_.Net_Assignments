@@ -172,6 +172,7 @@ namespace Student_Management_System
             this.btn_Search.TabIndex = 16;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // btn_Refresh
             // 
@@ -190,6 +191,7 @@ namespace Student_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(938, 646);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.cmb_Course);

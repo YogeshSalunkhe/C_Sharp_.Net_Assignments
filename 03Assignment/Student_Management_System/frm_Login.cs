@@ -69,8 +69,8 @@ namespace Student_Management_System
             if(Cnt > 0)
             {
                 MessageBox.Show("Login Successfully!!!","Login",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                frm_Add_New_Student Obj = new frm_Add_New_Student();
-                Obj.Show();
+                MDI_Menu obj = new MDI_Menu();
+                obj.Show();
                 this.Hide();
 
             }

@@ -34,17 +34,17 @@ namespace Student_Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_View_All_Student_Details));
             this.lbl_Head = new System.Windows.Forms.Label();
             this.dgv_StudentDetails = new System.Windows.Forms.DataGridView();
-            this.student_Information_DBDataSet = new Student_Management_System.Student_Information_DBDataSet();
-            this.studentDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.student_DetailsTableAdapter = new Student_Management_System.Student_Information_DBDataSetTableAdapters.Student_DetailsTableAdapter();
             this.rollNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mobileNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.student_Information_DBDataSet = new Student_Management_System.Student_Information_DBDataSet();
+            this.student_DetailsTableAdapter = new Student_Management_System.Student_Information_DBDataSetTableAdapters.Student_DetailsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_StudentDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_Information_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_Information_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_Head
@@ -89,20 +89,6 @@ namespace Student_Management_System
             this.dgv_StudentDetails.Size = new System.Drawing.Size(867, 518);
             this.dgv_StudentDetails.TabIndex = 2;
             // 
-            // student_Information_DBDataSet
-            // 
-            this.student_Information_DBDataSet.DataSetName = "Student_Information_DBDataSet";
-            this.student_Information_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentDetailsBindingSource
-            // 
-            this.studentDetailsBindingSource.DataMember = "Student_Details";
-            this.studentDetailsBindingSource.DataSource = this.student_Information_DBDataSet;
-            // 
-            // student_DetailsTableAdapter
-            // 
-            this.student_DetailsTableAdapter.ClearBeforeFill = true;
-            // 
             // rollNODataGridViewTextBoxColumn
             // 
             this.rollNODataGridViewTextBoxColumn.DataPropertyName = "Roll_NO";
@@ -143,12 +129,27 @@ namespace Student_Management_System
             this.courseDataGridViewTextBoxColumn.Name = "courseDataGridViewTextBoxColumn";
             this.courseDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // studentDetailsBindingSource
+            // 
+            this.studentDetailsBindingSource.DataMember = "Student_Details";
+            this.studentDetailsBindingSource.DataSource = this.student_Information_DBDataSet;
+            // 
+            // student_Information_DBDataSet
+            // 
+            this.student_Information_DBDataSet.DataSetName = "Student_Information_DBDataSet";
+            this.student_Information_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // student_DetailsTableAdapter
+            // 
+            this.student_DetailsTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_View_All_Student_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(938, 646);
+            this.ControlBox = false;
             this.Controls.Add(this.dgv_StudentDetails);
             this.Controls.Add(this.lbl_Head);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -159,8 +160,8 @@ namespace Student_Management_System
             this.Text = "frm_View_All_Student_Details";
             this.Load += new System.EventHandler(this.frm_View_All_Student_Details_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_StudentDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.student_Information_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.student_Information_DBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

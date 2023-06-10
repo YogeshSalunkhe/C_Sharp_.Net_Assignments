@@ -196,6 +196,7 @@ namespace Student_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(938, 646);
+            this.ControlBox = false;
             this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.dtp_DOB);
             this.Controls.Add(this.btn_Refresh);
