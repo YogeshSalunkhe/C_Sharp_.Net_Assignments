@@ -43,13 +43,14 @@ namespace Student_Management_System
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_Head = new System.Windows.Forms.Label();
             this.dtp_DOB = new System.Windows.Forms.DateTimePicker();
+            this.btn_Search = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Refresh
             // 
             this.btn_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_Refresh.Font = new System.Drawing.Font("Modern No. 20", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(175, 564);
+            this.btn_Refresh.Location = new System.Drawing.Point(158, 555);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(183, 45);
             this.btn_Refresh.TabIndex = 30;
@@ -60,7 +61,7 @@ namespace Student_Management_System
             // 
             this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_Update.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.Location = new System.Drawing.Point(496, 563);
+            this.btn_Update.Location = new System.Drawing.Point(522, 554);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(169, 46);
             this.btn_Update.TabIndex = 29;
@@ -77,7 +78,7 @@ namespace Student_Management_System
             "BSCcs",
             "BCOM IT",
             "BBA"});
-            this.cmb_Course.Location = new System.Drawing.Point(545, 475);
+            this.cmb_Course.Location = new System.Drawing.Point(481, 460);
             this.cmb_Course.Name = "cmb_Course";
             this.cmb_Course.Size = new System.Drawing.Size(269, 37);
             this.cmb_Course.TabIndex = 27;
@@ -85,7 +86,7 @@ namespace Student_Management_System
             // tb_Name
             // 
             this.tb_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Name.Location = new System.Drawing.Point(545, 223);
+            this.tb_Name.Location = new System.Drawing.Point(481, 208);
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(269, 36);
             this.tb_Name.TabIndex = 21;
@@ -93,7 +94,7 @@ namespace Student_Management_System
             // tb_MobNO
             // 
             this.tb_MobNO.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MobNO.Location = new System.Drawing.Point(545, 310);
+            this.tb_MobNO.Location = new System.Drawing.Point(481, 295);
             this.tb_MobNO.MaxLength = 10;
             this.tb_MobNO.Name = "tb_MobNO";
             this.tb_MobNO.Size = new System.Drawing.Size(269, 36);
@@ -102,7 +103,7 @@ namespace Student_Management_System
             // tb_RollNO
             // 
             this.tb_RollNO.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_RollNO.Location = new System.Drawing.Point(545, 145);
+            this.tb_RollNO.Location = new System.Drawing.Point(481, 130);
             this.tb_RollNO.Name = "tb_RollNO";
             this.tb_RollNO.Size = new System.Drawing.Size(269, 36);
             this.tb_RollNO.TabIndex = 19;
@@ -112,7 +113,7 @@ namespace Student_Management_System
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(198, 477);
+            this.label5.Location = new System.Drawing.Point(181, 460);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 31);
             this.label5.TabIndex = 28;
@@ -123,7 +124,7 @@ namespace Student_Management_System
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(209, 225);
+            this.label4.Location = new System.Drawing.Point(192, 208);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 31);
             this.label4.TabIndex = 26;
@@ -134,7 +135,7 @@ namespace Student_Management_System
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(135, 315);
+            this.label3.Location = new System.Drawing.Point(118, 298);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 31);
             this.label3.TabIndex = 24;
@@ -145,7 +146,7 @@ namespace Student_Management_System
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(202, 397);
+            this.label2.Location = new System.Drawing.Point(185, 380);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 31);
             this.label2.TabIndex = 22;
@@ -156,7 +157,7 @@ namespace Student_Management_System
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 145);
+            this.label1.Location = new System.Drawing.Point(152, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 31);
             this.label1.TabIndex = 20;
@@ -167,7 +168,7 @@ namespace Student_Management_System
             this.lbl_Head.AutoSize = true;
             this.lbl_Head.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lbl_Head.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Head.Location = new System.Drawing.Point(240, 43);
+            this.lbl_Head.Location = new System.Drawing.Point(199, 32);
             this.lbl_Head.Name = "lbl_Head";
             this.lbl_Head.Size = new System.Drawing.Size(492, 50);
             this.lbl_Head.TabIndex = 18;
@@ -176,13 +177,25 @@ namespace Student_Management_System
             // dtp_DOB
             // 
             this.dtp_DOB.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_DOB.Location = new System.Drawing.Point(545, 397);
+            this.dtp_DOB.Location = new System.Drawing.Point(481, 382);
             this.dtp_DOB.MaxDate = new System.DateTime(2005, 12, 31, 0, 0, 0, 0);
             this.dtp_DOB.MinDate = new System.DateTime(1985, 1, 1, 0, 0, 0, 0);
             this.dtp_DOB.Name = "dtp_DOB";
             this.dtp_DOB.Size = new System.Drawing.Size(269, 36);
             this.dtp_DOB.TabIndex = 31;
             this.dtp_DOB.Value = new System.DateTime(2005, 12, 31, 0, 0, 0, 0);
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_Search.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.Location = new System.Drawing.Point(787, 126);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(118, 42);
+            this.btn_Search.TabIndex = 32;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click_1);
             // 
             // frm_Update_Student_Details
             // 
@@ -191,6 +204,7 @@ namespace Student_Management_System
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(938, 646);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.dtp_DOB);
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btn_Update);
@@ -229,5 +243,6 @@ namespace Student_Management_System
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Head;
         private System.Windows.Forms.DateTimePicker dtp_DOB;
+        private System.Windows.Forms.Button btn_Search;
     }
 }

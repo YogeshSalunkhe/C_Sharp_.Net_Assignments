@@ -44,12 +44,14 @@ namespace Student_Management_System
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notepadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.btn_LogOut = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
-            this.menuStrip.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.menuStrip.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolsMenu,
@@ -57,7 +59,7 @@ namespace Student_Management_System
             this.toolToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(938, 33);
+            this.menuStrip.Size = new System.Drawing.Size(938, 39);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -69,34 +71,34 @@ namespace Student_Management_System
             this.searchStudentDetailsToolStripMenuItem,
             this.updateStudentDetailsToolStripMenuItem});
             this.toolsMenu.Name = "toolsMenu";
-            this.toolsMenu.Size = new System.Drawing.Size(108, 29);
+            this.toolsMenu.Size = new System.Drawing.Size(128, 35);
             this.toolsMenu.Text = "Student";
             // 
             // addNewStudentToolStripMenuItem
             // 
             this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
-            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
+            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(403, 36);
             this.addNewStudentToolStripMenuItem.Text = "Add New Student";
             this.addNewStudentToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentToolStripMenuItem_Click);
             // 
             // viewStudentListToolStripMenuItem
             // 
             this.viewStudentListToolStripMenuItem.Name = "viewStudentListToolStripMenuItem";
-            this.viewStudentListToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
+            this.viewStudentListToolStripMenuItem.Size = new System.Drawing.Size(403, 36);
             this.viewStudentListToolStripMenuItem.Text = "View Student List";
             this.viewStudentListToolStripMenuItem.Click += new System.EventHandler(this.viewStudentListToolStripMenuItem_Click);
             // 
             // searchStudentDetailsToolStripMenuItem
             // 
             this.searchStudentDetailsToolStripMenuItem.Name = "searchStudentDetailsToolStripMenuItem";
-            this.searchStudentDetailsToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
+            this.searchStudentDetailsToolStripMenuItem.Size = new System.Drawing.Size(403, 36);
             this.searchStudentDetailsToolStripMenuItem.Text = "Search Student Details";
             this.searchStudentDetailsToolStripMenuItem.Click += new System.EventHandler(this.searchStudentDetailsToolStripMenuItem_Click);
             // 
             // updateStudentDetailsToolStripMenuItem
             // 
             this.updateStudentDetailsToolStripMenuItem.Name = "updateStudentDetailsToolStripMenuItem";
-            this.updateStudentDetailsToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
+            this.updateStudentDetailsToolStripMenuItem.Size = new System.Drawing.Size(403, 36);
             this.updateStudentDetailsToolStripMenuItem.Text = "Update Student Details";
             this.updateStudentDetailsToolStripMenuItem.Click += new System.EventHandler(this.updateStudentDetailsToolStripMenuItem_Click);
             // 
@@ -106,19 +108,19 @@ namespace Student_Management_System
             this.addNewCourseToolStripMenuItem,
             this.viewCourseListToolStripMenuItem});
             this.courseToolStripMenuItem.Name = "courseToolStripMenuItem";
-            this.courseToolStripMenuItem.Size = new System.Drawing.Size(96, 29);
+            this.courseToolStripMenuItem.Size = new System.Drawing.Size(113, 35);
             this.courseToolStripMenuItem.Text = "Course";
             // 
             // addNewCourseToolStripMenuItem
             // 
             this.addNewCourseToolStripMenuItem.Name = "addNewCourseToolStripMenuItem";
-            this.addNewCourseToolStripMenuItem.Size = new System.Drawing.Size(281, 30);
+            this.addNewCourseToolStripMenuItem.Size = new System.Drawing.Size(322, 36);
             this.addNewCourseToolStripMenuItem.Text = "Add New Course";
             // 
             // viewCourseListToolStripMenuItem
             // 
             this.viewCourseListToolStripMenuItem.Name = "viewCourseListToolStripMenuItem";
-            this.viewCourseListToolStripMenuItem.Size = new System.Drawing.Size(281, 30);
+            this.viewCourseListToolStripMenuItem.Size = new System.Drawing.Size(322, 36);
             this.viewCourseListToolStripMenuItem.Text = "View Course List";
             // 
             // toolToolStripMenuItem
@@ -128,7 +130,7 @@ namespace Student_Management_System
             this.notepadToolStripMenuItem});
             this.toolToolStripMenuItem.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(84, 29);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(84, 35);
             this.toolToolStripMenuItem.Text = "Tools";
             // 
             // calculatorToolStripMenuItem
@@ -143,11 +145,25 @@ namespace Student_Management_System
             this.notepadToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.notepadToolStripMenuItem.Text = "Notepad";
             // 
+            // btn_LogOut
+            // 
+            this.btn_LogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_LogOut.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LogOut.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_LogOut.Location = new System.Drawing.Point(786, 0);
+            this.btn_LogOut.Name = "btn_LogOut";
+            this.btn_LogOut.Size = new System.Drawing.Size(140, 39);
+            this.btn_LogOut.TabIndex = 2;
+            this.btn_LogOut.Text = "LogOut";
+            this.btn_LogOut.UseVisualStyleBackColor = false;
+            // 
             // MDI_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 679);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(938, 685);
+            this.Controls.Add(this.btn_LogOut);
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -180,6 +196,7 @@ namespace Student_Management_System
         private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem notepadToolStripMenuItem;
+        private System.Windows.Forms.Button btn_LogOut;
     }
 }
 

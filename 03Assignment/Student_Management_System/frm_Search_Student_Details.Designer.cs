@@ -184,6 +184,7 @@ namespace Student_Management_System
             this.btn_Refresh.TabIndex = 17;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // frm_Search_Student_Details
             // 
@@ -211,6 +212,7 @@ namespace Student_Management_System
             this.Name = "frm_Search_Student_Details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search Student Details";
+            this.Load += new System.EventHandler(this.frm_Search_Student_Details_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

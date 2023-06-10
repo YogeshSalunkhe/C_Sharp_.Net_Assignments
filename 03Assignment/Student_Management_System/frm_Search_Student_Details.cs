@@ -34,6 +34,14 @@ namespace Student_Management_System
                 Con.Close();
             }
         }
+        void Clear_Cantrols()
+        {
+            tb_RollNO.Clear();
+            tb_Name.Clear();
+            tb_MobNO.Clear();
+            dtp_DOB.Value = dtp_DOB.MaxDate;
+            cmb_Course.SelectedIndex = -1;
+        }
         private void btn_Search_Click(object sender, EventArgs e)
         {
             Con_Open();
@@ -50,20 +58,38 @@ namespace Student_Management_System
 
                 if(Dr.Read())
                 {
+                    tb_Name.Text = Dr.GetString(Dr.GetOrdinal("Name"));
+                    tb_MobNO.Text = (Dr["Mobile_NO"].ToString());
+                    dtp_DOB.Text = (Dr["DOB"].ToString());
+                    cmb_Course.Text = Dr.GetString(Dr.GetOrdinal("Course"));
 
                 }
                 else
                 {
-
+                    MessageBox.Show("Given Roll Number Is Invalid !!!", "INVALID", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    tb_RollNO.Clear();
+                    tb_RollNO.Focus();
                 }
             }
             else
             {
                 MessageBox.Show("Enter Roll Number For Search Details!!!", "INCOPLETE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                tb_RollNO.Focus();
             }
 
 
             Con_Close();
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            Clear_Cantrols();
+            tb_RollNO.Focus();
+        }
+
+        private void frm_Search_Student_Details_Load(object sender, EventArgs e)
+        {
+            tb_RollNO.Focus();
         }
     }
 }
