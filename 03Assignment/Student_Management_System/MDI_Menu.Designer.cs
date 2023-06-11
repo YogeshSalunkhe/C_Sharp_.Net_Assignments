@@ -156,6 +156,7 @@ namespace Student_Management_System
             this.btn_LogOut.TabIndex = 2;
             this.btn_LogOut.Text = "LogOut";
             this.btn_LogOut.UseVisualStyleBackColor = false;
+            this.btn_LogOut.Click += new System.EventHandler(this.btn_LogOut_Click);
             // 
             // MDI_Menu
             // 

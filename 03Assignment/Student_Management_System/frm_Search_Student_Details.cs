@@ -42,6 +42,13 @@ namespace Student_Management_System
             dtp_DOB.Value = dtp_DOB.MaxDate;
             cmb_Course.SelectedIndex = -1;
         }
+        private void Only_Numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (Char)Keys.Back)))
+            {
+                e.Handled = true;
+            }
+        }
         private void btn_Search_Click(object sender, EventArgs e)
         {
             Con_Open();
@@ -90,6 +97,14 @@ namespace Student_Management_System
         private void frm_Search_Student_Details_Load(object sender, EventArgs e)
         {
             tb_RollNO.Focus();
+        }
+
+        private void Only_Number(object sender, KeyPressEventArgs e)
+        {
+            if(!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (Char)Keys.Back)))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

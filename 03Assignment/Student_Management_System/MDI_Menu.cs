@@ -49,5 +49,16 @@ namespace Student_Management_System
             obj.WindowState = FormWindowState.Maximized;
             obj.Show();
         }
+
+        private void btn_LogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult Res = MessageBox.Show("Are You Suru To Log Out?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(Res == DialogResult.Yes)
+            {
+                frm_Login obj = new frm_Login();
+                this.Hide();
+                obj.Show();
+            }
+        }
     }
 }

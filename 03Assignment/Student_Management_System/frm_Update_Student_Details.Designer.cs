@@ -56,6 +56,7 @@ namespace Student_Management_System
             this.btn_Refresh.TabIndex = 30;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Update
             // 
@@ -67,6 +68,7 @@ namespace Student_Management_System
             this.btn_Update.TabIndex = 29;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // cmb_Course
             // 
@@ -107,6 +109,7 @@ namespace Student_Management_System
             this.tb_RollNO.Name = "tb_RollNO";
             this.tb_RollNO.Size = new System.Drawing.Size(269, 36);
             this.tb_RollNO.TabIndex = 19;
+            this.tb_RollNO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Number);
             // 
             // label5
             // 
@@ -223,6 +226,7 @@ namespace Student_Management_System
             this.MinimizeBox = false;
             this.Name = "frm_Update_Student_Details";
             this.Text = "Update Student Details";
+            this.Load += new System.EventHandler(this.frm_Update_Student_Details_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -106,6 +106,7 @@ namespace Student_Management_System
             this.tb_RollNO.Name = "tb_RollNO";
             this.tb_RollNO.Size = new System.Drawing.Size(269, 36);
             this.tb_RollNO.TabIndex = 6;
+            this.tb_RollNO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Number);
             // 
             // label5
             // 
