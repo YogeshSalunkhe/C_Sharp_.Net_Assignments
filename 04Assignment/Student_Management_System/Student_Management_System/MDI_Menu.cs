@@ -74,5 +74,15 @@ namespace Student_Management_System
                 obj.Show();
             }
         }
+
+        private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.Exe");
+        }
+
+        private void notepadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Notepad.Exe");
+        }
     }
 }

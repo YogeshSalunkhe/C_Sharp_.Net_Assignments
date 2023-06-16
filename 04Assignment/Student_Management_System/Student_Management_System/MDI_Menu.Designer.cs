@@ -138,14 +138,16 @@ namespace Student_Management_System
             // calculatorToolStripMenuItem
             // 
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.calculatorToolStripMenuItem.Text = "Calculator";
+            this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
             // 
             // notepadToolStripMenuItem
             // 
             this.notepadToolStripMenuItem.Name = "notepadToolStripMenuItem";
-            this.notepadToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
+            this.notepadToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.notepadToolStripMenuItem.Text = "Notepad";
+            this.notepadToolStripMenuItem.Click += new System.EventHandler(this.notepadToolStripMenuItem_Click);
             // 
             // btn_LogOut
             // 
